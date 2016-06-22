@@ -1,0 +1,28 @@
+//
+//  testPod.pch
+//  testPod
+//
+//  Created by iOS on 16/6/16.
+//  Copyright © 2016年 iOS. All rights reserved.
+//
+
+#ifndef testPod_pch
+#define testPod_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "CocoaLumberjack.h"
+
+
+#endif /* testPod_pch */
+
+
+#ifdef DEBUG
+static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
+#else
+static const DDLogLevel ddLogLevel = DDLogLevelOff;
+#endif
+
